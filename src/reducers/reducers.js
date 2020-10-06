@@ -86,7 +86,7 @@ const updateCartElement =  (elementId, state, action) => {
                 },
                 elementIndex
             }
-        }else if(infoDiscount.discount && element.count % infoDiscount.count === 2) {
+        }else if(infoDiscount.discount && element.count % infoDiscount.count === (infoDiscount.count - 1)) {
             console.log(element.count % infoDiscount.count)
 
             return{
